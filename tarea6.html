@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eric Tehuacatl">
+    <title>Listas y formularios</title>
+</head>
+<body>
+    <h1>Listas y formularios</h1>
+
+    
+    <div>
+        
+        <h2>Listas</h2>
+        <h3>Lista no ordenada</h3>
+        
+        <ul>
+            
+            <li>Leche</li>
+            <li>Carne</li>
+            <li>Pan</li>
+            <li>Huevos</li>
+            <li>papel</li>
+
+        </ul>
+
+
+    </div>
+
+    
+    <div>
+        <h3>Lista ordenada</h3>
+
+        <ol type="1" start="14" reversed>
+            
+            <li>Catorceavo</li>
+            <li>Treceavo</li>
+            <li>Doceavo</li>
+            <li>Onceavo</li>
+            <li>Decimoo</li>
+
+        </ol>
+
+    </div>
+
+    <div>
+        <h3>Lista de definición</h3>
+        <dl>
+
+            <dt>HTML</dt>
+            <dd>Lenguaje de marcado de hipertexto</dd>
+            <dt>CSS</dt>
+            <dd>Hojas de estilo en cascada</dd>
+            <dt>JS</dt>
+            <dd>JavaScript</dd>
+
+
+        </dl>
+
+        <h3>Listas Anidadas</h3>
+        <p>Desarrollo web</p>
+        <ul>
+            <li>Front-end
+                <ol type="I">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JS</li>
+                </ol>
+            </li>
+            <li>Back-end
+                <ol type="A">
+                    <li>Node.js</li>
+                    <li>MySQL</li>
+                    <li>ArchLinux</li>
+                </ol>
+            </li> 
+
+        </ul>
+
+
+    </div>
+
+    <hr>
+
+    <div>
+        <h2>Formularios</h2>
+        <h3>Formulario de inicio de sesion</h3>
+        <form action="/inicio_sesion" method="get">
+            <label for="">Nombre de usuario:</label>
+            <input type="text" name="usuario" id="usuario" placeholder="Ingrese su usuario" required>
+            <br>
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" name="contrasena" id="contrasena" placeholder="Ingrese su contraseña" required>
+            <br>
+            <button type="submit">Iniciar sesión</button>
+        </form>
+        <hr>
+        <br>
+
+        <h3>Formulario con campo de entrada de varias lineas</h3>
+        <form action="validar.js" method="post">
+             <label for="name">Nombre:</label>
+            <input type="text" name="name" id="name" placeholder="Ingrese su nombre" required>
+            <br>
+            <label for="opinion">Comentario:</label>
+            <textarea name="opinion" id="opinion" placeholder="Ingrese tu opinion" required rows="5" cols="40"></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+        <hr>
+        <br>
+        <h3>Formulario con una lista desplegable de opciones</h3>
+        <form>
+            <label for="Bebidas">Bebidas:</label>
+            <select name="bebida" id="Bebidas" required>
+                <option value="" disabled selected>Seleccione una bebida</option>
+                <option value="coca-cola">Coca-Cola</option>
+                <option value="volt">Volt</option>
+                <option value="boing">Boing</option>
+                <option value="jarritos">Jarritos</option>
+            </select>
+        </form>
+        
+        <br>
+        <form>
+            <label for ="postres">Postres:</label>
+            <select name="postre" id="postres" required>
+                <option value="" disabled selected>Seleccione un postre</option>
+                <option value="pay de limón">Pay de limón</option>
+                <option value="pay de fresa">Pay de fresa</option>
+                <option value="flan">Flan</option>
+                <option value="gelatina">Gelatina</option>
+            </select>
+            <br>
+            <input type="submit" value="Enviar">
+         
+
+
+
+
+
+        </form>
+        <hr>
+        <br>
+
+        <h3>Formulario con distintos campos de datos</h3>
+        <form action="datos.php" method="post">
+            
+            <fieldset>
+                <legend>Nombre completo</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+                <br>
+                <label for="apellido-paterno">Apellido Paterno:</label>
+                <input type="text" name="apellido-paterno" id="apellido-paterno" placeholder="Ingrese su apellido paterno" required>
+                <br>
+                <label for="apellido-materno">Apellido Materno:</label>
+                <input type="text" name="apellido-materno" id="apellido-materno" placeholder="Ingrese su apellido materno" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Otros datos</legend>
+                <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+                <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" required>
+                <br>
+                <label for="edad">Edad:</label>
+                <input type="text" name="edad" id="edad" placeholder="Ingrese su edad" min="18" max="99" required>
+                <br>
+                <label for="numero_cuenta">Número de cuenta:</label>
+                <input type="text" name="numero_cuenta" id="numero_cuenta" placeholder="Ingrese su número de cuenta" required minlength="9" maxlength="9" title="El número de cuenta debe tener 9 dígitos" pattern="[0-9]{9}">
+                <br>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" name="correo" id="correo" placeholder="Ingrese su correo electrónico" required>
+                <br>
+                
+            </fieldset>
+            
+            <button type="submit">Enviar</button>
+
+        </form>
+        
+
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>

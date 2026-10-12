@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas semanticas y de formateo de texto 2</title>
+    <meta name="author" content="Eric Tehuacatl">
+    <meta name="keywords" content="HTML, metadato, fundamentos, etiqueta, formateo, texto, desarrollo">
+    <meta name="description" content="Esta página contiene los fundamentos de las etiquetas HTML, el uso de metadatos en una página web y el uso de etiquetas para formatear el texto">    
+    <title>Document</title>
+</head>
+<body>
+    <h2>como citar con semanticas en html</h2>
+    <!-- citas crotas -->
+<p> Como dijo un sabio: "Yo solo se que no se nada"-sabio</p>
+<p> Como dijo un sabio: <q>Yo solo se que no se nada</q>-sabio</p>
+
+
+    <!-- citas largas -->
+     <p> Como dijo un sabio:</p>
+     <blockquote>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque sit, quas mollitia, nostrum reprehenderit voluptatem cumque dolorem soluta dolor similique aspernatur perspiciatis obcaecati veniam, ea quae harum recusandae repellendus quod.   
+     </blockquote><p>-sabio</p>
+     <p> y como dijo otro sabio:</p>
+        <blockquote>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </blockquote>-sabio</p>
+
+        <hr>
+
+       <h2>Etiquetas de salto de línea y reglas horzontales</h2>
+
+        <p> Estes es el primer párrafo</p>
+        <p> Estes es el segundo párrafo</p>
+        <p> Estes es el tercer párrafo</p><br>este es un salto de línea<br>
+        <hr>
+        <h2>Visualizacion y formato de codigo</h2>
+        <p>Cuando nosotros implementamos <code>print("Hola, Mundo!")</code> en Python, obtenemos la siguiente salida en consola: <code>Hola, Mundo!</code></p>
+        <pre>
+print("Hola, Mundo!")
+        </pre>
+        <h3>Visualizacion de codigo en varias lineas</h3>
+        <p>Este programa suma los numeros en python</p>
+        <pre>
+           # Este programa suma dos numeros
+             a = 5
+             b = 10  
+             print("La suma es:", a + b)
+        </pre>
+
+        <p>Este programa imprime un hola mundo en html</p>
+        <pre>
+            <!-- <p>Para escribir caracteres especiales cono <> se utilizan los simbolos especiales como &lt; y &gt;</p> -->
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;Document&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Hola Mundo&lt;/h1&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+        <hr>
+        <p>Para representar la entrada de teclado se utiliza la etiqueta <code>&lt;kbd&gt;&ltkbd/&gt</code></p>
+        <p>Para copiar el texto de un archivo se la combinacion de teclas <kbd>Ctrl</kbd>+<kbd>C</kbd></p>
+
+</body>
+</html>
