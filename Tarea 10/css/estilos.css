@@ -1,0 +1,32 @@
+.fondo-reze{
+    /* El gradiente semitransparente permite ver la imagen de fondo. */
+    background-image: linear-gradient(to top, rgba(238, 130, 238, 0.35), rgba(128, 128, 128, 0.35)), url(../Imagenes/Reze.jpg);
+
+    /* propiedades*/
+width: 6000px;
+height: 3000px;
+
+/*Background-size (cover, contain, width(px)-heigth(px))
+Epecificar el tamaño de la imagen de fondo*/
+background-size: contain;
+/*background-repeat(repeat, no-repeat, repeat-x, repeat-y)
+Aplica cuando la imagen es mas pequeña que su contenedor*/
+background-repeat: no-repeat;
+
+/* background-position: ; adopatar los posibles valores (top, bottom, center, rigth, left)
+y va a establecer la posicion inicial de una imagen en su contenedor */
+background-position:bottom ;
+
+/* background-attachment: ; (scroll y fixed) 
+se utiliza para que la imagen quede fija en su contenedor cuando un usuario se desplaza por la pagina*/
+background-attachment: fixed;
+
+}
+
+.fondo-miku{
+    /*background: (image) (position) / (size) (repeat) (attachment) (color)*/
+    background: url(../Imagenes/Miku.jpg) right / contain repeat scroll rgba(255,255,255,255);
+    width:500px;
+    height: 1000px;
+    border: 2px solid red;
+}
