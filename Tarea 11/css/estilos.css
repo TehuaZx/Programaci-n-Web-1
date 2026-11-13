@@ -1,0 +1,129 @@
+body{
+    font-family:Arial, "Helvetica neue", sans-serif;
+}
+
+#encabezado{
+    background-color: black;
+    color:white;
+    padding: 15px;
+    /*especificar el relleno padding: espacio entr eel contenido del elemento y su borde
+    se aplican los valores ene snetido horario, top, right, bottom y left
+    1valor: t,r,b,1 2valores: tb,rl 3valores t, rl, b*/
+    
+    /* BORDER es el contorno visual alrededor de nuestro elemnto html
+    dentro de el podemos encontar el contenido del elemento y su relleno
+    valores(solid, dashed, dotted, double, groove,
+    ridge, inset, outset, hidden y none) */
+
+    border: 15px, groove, rgb(0,195,255);
+    border-top-style: double;
+    border-left-color:red;
+    border-right-color:green;
+    border-bottom-width:2px;
+    border-radius: 10%;
+
+    box-shadow: 5px 5px 5px 5px  rgb(255, 0, 251);
+    text-decoration: underline;
+
+
+
+    /*border-style:solid;
+    border-width: 2px;
+    border-color: red;*/
+
+    /*box-shadow Se puede utilizar para crear efectos de sombre alrededor 
+    del borde de un elemento, se debene especificar los valores:
+    desolazamiento-horizontal
+    desplazamaiento-vertical
+    radio-desenfoque
+    radio-propagacion
+    color*/
+
+    
+
+    /* el margen es el espacio que hay entre un elemento html y 
+    el resto de los elementos html a su alrededror */
+    margin: 15px, 5px;
+
+
+    
+
+
+
+
+}
+
+
+.introduccion{
+    background-color: rgba(47, 255, 0, 0.722);
+    color: black;
+    padding: 15px;
+    border: 15px, groove, yellow;
+    border-top-style: double;
+    border-left-color:red;
+    border-right-color:green;
+    border-bottom-width:2px;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px 5px  orange;
+}
+
+.introduccion p{
+    border: 2px dotted black;
+    width: 300px;
+    height:150px;
+    padding:5px;
+    box-sizing: border-box;
+}
+
+.introduccion span{
+    border: 2px groove black;
+    width: 300px;
+    height: 150; 
+    padding:10px;
+    margin:50px;
+}
+
+.texto-fuente{
+    background-color: black;
+    color: white;
+}
+.propiedades-texto h3{
+    border: 2px solid red;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px purple;
+    font-family: "Shippori Mincho";
+    
+}
+
+.propiedades-texto p{
+    padding: 8px;
+    text-align: justify;
+    line-height: 5;
+    letter-spacing: 5px;
+    word-spacing:3px;
+    font-family: "Zeyada";
+}
+
+.propiedades-fuentes h2{
+    padding:5px;
+    text-align: center;
+    text-shadow: 2px 2px 2px purple;
+    line-height: 5;
+    letter-spacing: 5px;
+    word-spacing:3px;
+    font-size: 60px;
+    font-family:'Times New Roman', Times, serif;
+    font-family:"Saira";
+}
+
+.propiedades-fuentes p{
+    padding:5px;
+    line-height: 5;
+    letter-spacing: 5px;
+    word-spacing:3px;
+    font-weight: 900;
+    font-style: italic;
+}
+
